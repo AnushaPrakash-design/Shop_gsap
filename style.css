@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+	background: black;
+}
+header {
+	height: 100vh;
+	position: relative;
+	display: flex;
+}
+
+.cover {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	object-fit: cover;
+	object-position: top;
+}
+
+.cover-date {
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+	/* color: darkgrey; */
+	color: white;
+	opacity: 0.7;
+}
+
+nav {
+	background: white;
+	width: 40%;
+	height: 20%;
+	z-index: 2;
+	color: #916356;
+}
+
+.nav-closed {
+	width: 40%;
+	height: 20%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.nav-closed ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-closed ul li a {
+	list-style: none;
+	text-decoration: none;
+	margin: 25px;
+	color: #916356;
+}
+
+.nav-open {
+	width: 40%;
+	height: 80%;
+	position: absolute;
+	top: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.clothing {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.clothing h2 {
+	font-size: 40px;
+}
+
+.clothing ul li {
+	margin-bottom: 20px;
+}
+.clothing ul {
+	list-style: none;
+}
+
+.nav-images {
+	display: flex;
+	justify-content: space-around;
+}
+.clothing ul li a {
+	text-decoration: none;
+	color: #916356;
+}
+.nav-images img {
+	height: 250px;
+	margin: 20px;
+}
